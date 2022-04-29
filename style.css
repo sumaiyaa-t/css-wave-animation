@@ -7,7 +7,7 @@ body{
 }
 
 .ocean{
-    height: 5%;
+    height: 20%;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -31,6 +31,13 @@ body{
     swell 7s ease -1.25s infinite;
 }
 
+  .content {
+    position:relative;
+    color: #fff;
+    margin-top: 450px;
+    
+  }
+
 @keyframes wave {
     0%{
         margin-left: 0;
@@ -46,4 +53,35 @@ body{
     50%{
         transform: translate3d(0, 5px, 0);
     }
+}
+
+
+/*mobile device*/
+@media only screen and (max-width: 600px) {
+
+    .ocean{
+        height: 60%;
+    }
+
+    .content {
+        position:relative;
+        color: #fff;
+        margin-top: 310px;
+        
+      }
+}
+
+/*tablet device*/
+@media only screen and (min-device-width:768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .ocean{
+        height: 50%;
+    }
+
+    .content {
+        position:relative;
+        color: #fff;
+        margin-top: 570px;
+        
+      }
+
 }
